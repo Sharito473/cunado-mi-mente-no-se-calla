@@ -3,11 +3,10 @@
 <html class="scroll-smooth" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Ya no te espero, me elijo | Sara Montiel</title>
+<title>Cuando mi mente no se calla</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&amp;family=Manrope:wght@300;400;600;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
@@ -15,65 +14,87 @@
         theme: {
           extend: {
             "colors": {
+                    "on-primary-container": "#332846",
+                    "on-secondary-fixed": "#221a0f",
                     "on-primary": "#ffffff",
-                    "surface": "#fef9f2",
-                    "secondary-fixed-dim": "#d8c2bb",
-                    "on-error": "#ffffff",
-                    "background": "#fef9f2",
+                    "inverse-on-surface": "#f2f0ed",
+                    "on-background": "#1b1c1a",
+                    "on-tertiary-fixed": "#1c1a25",
+                    "on-secondary-container": "#6d6354",
+                    "surface-container": "#efeeea",
                     "on-secondary": "#ffffff",
-                    "on-background": "#1d1b18",
-                    "error-container": "#ffdad6",
-                    "on-surface-variant": "#504440",
-                    "inverse-on-surface": "#f5f0ea",
-                    "inverse-primary": "#e7bdaf",
+                    "primary-fixed": "#ebdcff",
+                    "surface-variant": "#e4e2de",
+                    "tertiary": "#5f5d69",
+                    "tertiary-container": "#9793a1",
+                    "surface-dim": "#dbdad6",
+                    "secondary": "#675d4e",
+                    "primary-fixed-dim": "#cfc0e6",
+                    "tertiary-fixed-dim": "#c9c4d3",
                     "error": "#ba1a1a",
-                    "tertiary-fixed": "#cce8e7",
-                    "surface-container-highest": "#e7e2dc",
-                    "on-secondary-fixed-variant": "#53433e",
-                    "surface-container-lowest": "#ffffff",
-                    "tertiary-fixed-dim": "#b0ccca",
+                    "inverse-surface": "#30312e",
+                    "primary": "#65597a",
+                    "primary-container": "#9d8fb3",
+                    "on-surface-variant": "#49454d",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#65597a",
+                    "tertiary-fixed": "#e5e0ef",
+                    "on-surface": "#1b1c1a",
+                    "outline": "#7a757e",
+                    "secondary-fixed": "#efe0cd",
+                    "surface": "#fbf9f5",
+                    "background": "#fbf9f5",
+                    "on-primary-fixed": "#201633",
+                    "inverse-primary": "#cfc0e6",
+                    "on-secondary-fixed-variant": "#4f4538",
+                    "outline-variant": "#cbc4cd",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#4d4161",
+                    "on-tertiary-container": "#2e2c37",
+                    "secondary-container": "#efe0cd",
+                    "surface-container-high": "#eae8e4",
                     "on-error-container": "#93000a",
-                    "on-primary-container": "#fff6f3",
-                    "on-tertiary-fixed-variant": "#324b4a",
-                    "primary-fixed": "#ffdbcf",
-                    "on-secondary-fixed": "#251915",
-                    "surface-tint": "#77574c",
-                    "on-secondary-container": "#72615b",
-                    "surface-container": "#f2ede7",
-                    "on-primary-fixed-variant": "#5d4035",
-                    "surface-bright": "#fef9f2",
-                    "secondary-fixed": "#f5ded6",
-                    "tertiary-container": "#5d7776",
-                    "on-tertiary-fixed": "#041f1f",
-                    "on-surface": "#1d1b18",
-                    "surface-container-low": "#f8f3ed",
-                    "primary-container": "#8c6a5e",
-                    "inverse-surface": "#32302c",
-                    "secondary": "#6b5b55",
-                    "secondary-container": "#f5ded6",
-                    "outline-variant": "#d4c3be",
-                    "tertiary": "#455e5d",
-                    "primary-fixed-dim": "#e7bdaf",
-                    "surface-container-high": "#ece7e1",
-                    "on-primary-fixed": "#2c160d",
-                    "outline": "#827470",
-                    "surface-variant": "#e7e2dc",
-                    "on-tertiary-container": "#e2fefd",
+                    "surface-container-lowest": "#ffffff",
                     "on-tertiary": "#ffffff",
-                    "primary": "#715247",
-                    "surface-dim": "#ded9d3"
+                    "on-tertiary-fixed-variant": "#474551",
+                    "surface-container-highest": "#e4e2de",
+                    "surface-container-low": "#f5f3ef",
+                    "secondary-fixed-dim": "#d2c4b2",
+                    "surface-bright": "#fbf9f5"
             },
             "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "container-max": "1140px",
+                    "gutter": "24px",
+                    "section-padding-sm": "64px",
+                    "section-padding-lg": "120px"
             },
             "fontFamily": {
-                    "headline": ["Noto Serif"],
-                    "body": ["Manrope"],
-                    "label": ["Manrope"],
-                    "accent": ["La Belle Aurore"]
+                    "body-md": ["Inter"],
+                    "quote": ["Playfair Display"],
+                    "label-caps": ["Inter"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "headline-sm": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "quote": ["24px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.8", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
             }
           },
         },
@@ -81,279 +102,420 @@
     </script>
 <style>
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .font-accent { font-family: 'La Belle Aurore', cursive; }
-        .font-serif { font-family: 'Noto Serif', serif; }
-        .font-body { font-family: 'Manrope', sans-serif; }
+        .soft-shadow {
+            box-shadow: 0 30px 60px -12px rgba(157, 143, 179, 0.04);
+        }
+        .reflection-card {
+            background-color: #f5f3ef;
+            transition: transform 0.3s ease;
+        }
+        .reflection-card:hover {
+            transform: translateY(-4px);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
     </style>
 </head>
-<body class="bg-surface text-on-surface font-body antialiased">
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 
-<!-- HERO SECTION -->
-<section class="relative overflow-hidden pt-12 md:pt-24 pb-20 md:pb-32 bg-surface" id="journey">
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div class="relative z-10">
-<p class="font-accent text-2xl md:text-3xl text-primary mb-4">Para la mujer que está lista para su renacer</p>
-<h1 class="text-5xl md:text-7xl font-serif text-on-surface leading-tight mb-8">
-                    Él ya tomó su camino, ahora te toca <span class="italic">elegir el tuyo</span>
-</h1>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
-                    Sé lo que es pasar las noches mirando la pantalla, esperando un mensaje que no llega. Ese vacío que duele al despertar. Pero hoy, ese ciclo termina. Es momento de transformar el dolor en tu mayor fortaleza.
-                </p>
-<div class="flex flex-col sm:flex-row gap-6">
-<a class="inline-block bg-primary-container text-on-primary text-center px-10 py-5 rounded-xl font-bold tracking-widest text-sm hover:scale-[0.98] transition-all shadow-xl shadow-primary/10" href="https://pay.hotmart.com/K105395278U">
-                        SÍ, QUIERO EMPEZAR MI SANACIÓN
+<!-- Section 1: Hero -->
+<section class="pt-32 pb-section-padding-lg px-margin-mobile md:px-gutter max-w-container-max mx-auto" id="ebook">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1 flex flex-col items-center md:items-start text-center md:text-left">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">¿Tu mente no se calla ni siquiera cuando todo parece estar bien?</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+Miles de personas viven agotadas por pensamientos que no pueden apagar. Este ebook te ayudará a comprender lo que ocurre en tu mente, dejar de luchar contra cada pensamiento y recuperar la calma paso a paso.
+</p>
+<div class="flex flex-col sm:flex-row gap-6 items-center mb-8">
+<a class="bg-primary text-on-primary px-10 py-5 rounded-full font-label-caps text-label-caps shadow-lg hover:opacity-90 active:scale-95 transition-all text-center" href="#pricing">
+                        Quiero acceder ahora
                     </a>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">9.99 USD</span>
+<span class="text-xs text-on-surface-variant line-through opacity-60">14.99 USD</span>
 </div>
 </div>
-<div class="relative">
-<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-fixed-dim/20 rounded-full blur-3xl"></div>
-<div class="relative z-10 bg-surface-container-lowest p-4 rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-700">
-<img src="mocku.png" alt="Ya no te espero, me elijo eBook Mockup">
-</div>
-<div class="absolute -bottom-6 -left-6 bg-surface-bright/90 backdrop-blur-md p-6 rounded-xl shadow-lg z-20 border border-outline-variant/15">
-<p class="font-accent text-xl text-primary">"Una guía hacia la libertad"</p>
-</div>
-</div>
-</div>
-</section>
-<!-- AGITACIÓN DEL DOLOR -->
-<section class="py-24 bg-surface-container-lowest" id="pain-points">
-<div class="max-w-4xl mx-auto px-8 text-center">
-<h2 class="text-4xl md:text-5xl font-serif mb-8 text-on-surface">¿Cuánto tiempo más vas a posponer tu paz?</h2>
-<p class="text-xl text-on-surface-variant mb-16 leading-relaxed">
-                Sé que te despiertas con un nudo en el estómago, buscando respuestas en recuerdos que ya no existen. El estancamiento emocional es una jaula invisible que tú misma puedes abrir.
-            </p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
-<div class="flex gap-4 items-start group">
-<span class="material-symbols-outlined text-primary-container text-3xl shrink-0">history</span>
-<div>
-<h4 class="font-bold text-lg mb-2">Revisar sus redes sociales</h4>
-<p class="text-on-surface-variant text-sm">Esa búsqueda de migajas que solo renueva la herida cada mañana.</p>
-</div>
-</div>
-<div class="flex gap-4 items-start group">
-<span class="material-symbols-outlined text-primary-container text-3xl shrink-0">sentiment_dissatisfied</span>
-<div>
-<h4 class="font-bold text-lg mb-2">Carga de culpa injusta</h4>
-<p class="text-on-surface-variant text-sm">Analizar cada palabra dicha y callada buscando "el error" que lo cambió todo.</p>
-</div>
-</div>
-<div class="flex gap-4 items-start group">
-<span class="material-symbols-outlined text-primary-container text-3xl shrink-0">alarm</span>
-<div>
-<h4 class="font-bold text-lg mb-2">Miedo al futuro</h4>
-<p class="text-on-surface-variant text-sm">Creer que no serás capaz de amar de nuevo o que tu mejor versión se fue con él.</p>
-</div>
-</div>
-<div class="flex gap-4 items-start group">
-<span class="material-symbols-outlined text-primary-container text-3xl shrink-0">block</span>
-<div>
-<h4 class="font-bold text-lg mb-2">El vacío del silencio</h4>
-<p class="text-on-surface-variant text-sm">Sentir que el silencio en tu hogar es un eco de su ausencia, no un refugio propio.</p>
-</div>
-</div>
-</div>
-<div class="mt-20 flex flex-col items-center">
-<img alt="Withered Flower Illustration" class="w-32 h-auto opacity-40 hover:opacity-60 transition-opacity" data-alt="Minimalist line art illustration of a single withered flower losing petals, symbolic of grief and transition, clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaYew9KtA5I51_a1AwrgEg653oRhRIgXDdM8pDeDmaDixgY7-FdnrXvkdGNM2DFKA3eDki22WZdx4mdJRXThg6vyQwowW_0I0_WgRs3iMuTAOt6_XTkauICzBNiUFr4hetLEyQPFr0rJHD0ThXIZcpOJYtfRkk_vzO1QFAk8dZSc80ncYPTAR-erroB-u9aBv8MLwcCMksiKDS2IcokfyGxOpDtWLbtn5XeULHHsmFvoc4VwtSxDfwaDTysibe3QcV-Xl2PM-YTKn2"/>
-</div>
-</div>
-</section>
-
-<!-- PRESENTACIÓN DE LA SOLUCIÓN -->
-<section class="py-24 bg-surface" id="solution">
-<div class="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
-<h2 class="text-4xl md:text-6xl font-serif mb-6 text-on-surface">Mereces volver a ser tu prioridad</h2>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mb-12">
-                Este ebook no es solo teoría; es el mapa exacto para dejar de esperar y empezar a construir la vida que amas, paso a paso, con compasión y firmeza.
-            </p>
-<div class="relative w-full max-w-lg mb-16">
-<div class="absolute inset-0 bg-primary-container/5 rounded-full blur-3xl scale-125"></div>
-<img src="mockus.png" alt="Ya no te espero, me elijo eBook Portada">
-</div>
-<a class="bg-primary-container text-on-primary px-12 py-5 rounded-xl font-bold tracking-widest hover:scale-[1.02] transition-transform shadow-lg" href="https://pay.hotmart.com/K105395278U">
-                QUIERO MI MAPA DE LIBERTAD
-            </a>
-</div>
-</section>
-
-<!-- BENEFICIOS Y TRANSFORMACIÓN -->
-<section class="py-24 bg-surface-container-lowest" id="benefits">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- Column 1 -->
-<div class="p-10 rounded-2xl bg-surface border border-outline-variant/10 hover:border-primary-container/20 transition-colors text-center group">
-<span class="material-symbols-outlined text-primary-container text-5xl mb-6 block group-hover:scale-110 transition-transform">spa</span>
-<h3 class="font-serif text-2xl mb-4">Recupera tu paz mental</h3>
-<p class="text-on-surface-variant leading-relaxed">
-                        Aprende a calmar el ruido de la ansiedad y las preguntas sin respuesta. Crea un refugio interno donde el silencio sea bienestar, no soledad.
-                    </p>
-</div>
-<!-- Column 2 -->
-<div class="p-10 rounded-2xl bg-surface border border-outline-variant/10 hover:border-primary-container/20 transition-colors text-center group">
-<span class="material-symbols-outlined text-primary-container text-5xl mb-6 block group-hover:scale-110 transition-transform">content_cut</span>
-<h3 class="font-serif text-2xl mb-4">Corta el lazo emocional</h3>
-<p class="text-on-surface-variant leading-relaxed">
-                        Un método probado para soltar la dependencia. Descubre cómo desvincular tu felicidad de la presencia de quien decidió irse.
-                    </p>
-</div>
-<!-- Column 3 -->
-<div class="p-10 rounded-2xl bg-surface border border-outline-variant/10 hover:border-primary-container/20 transition-colors text-center group">
-<span class="material-symbols-outlined text-primary-container text-5xl mb-6 block group-hover:scale-110 transition-transform">favorite</span>
-<h3 class="font-serif text-2xl mb-4">Reencuéntrate contigo</h3>
-<p class="text-on-surface-variant leading-relaxed">
-                        Reconstruye tu autoestima desde los cimientos. Vuelve a mirarte al espejo y reconocer a la mujer valiosa que siempre has sido.
-                    </p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- EL CONTENIDO (Steps) -->
-<section class="py-24 bg-surface" id="inside">
-<div class="max-w-5xl mx-auto px-8">
-<div class="flex flex-col items-center mb-16">
-<p class="font-accent text-2xl text-primary mb-2">El Camino a Casa</p>
-<h2 class="text-4xl md:text-5xl font-serif text-center">Un viaje de 5 pasos hacia tu libertad</h2>
-</div>
-<div class="space-y-4">
-<!-- Step 1 -->
-<div class="flex items-center gap-6 p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors">
-<div class="text-4xl font-serif text-primary-container/30">01</div>
-<div>
-<h4 class="text-xl font-serif font-bold text-on-surface">Capítulo 1: ¿Por qué no puedes soltar?</h4>
-<p class="text-on-surface-variant"> Entiende el apego emocional que te mantiene atada, incluso cuando sabes que ya terminó.</p>
-</div>
-</div>
-<!-- Step 2 -->
-<div class="flex items-center gap-6 p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors">
-<div class="text-4xl font-serif text-primary-container/30">02</div>
-<div>
-<h4 class="text-xl font-serif font-bold text-on-surface">Capítulo 2: El dolor de la ruptura </h4>
-<p class="text-on-surface-variant">Aprende a manejar la ansiedad, los recuerdos y los pensamientos que no te dejan en paz.</p>
-</div>
-</div>
-<!-- Step 3 -->
-<div class="flex items-center gap-6 p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors">
-<div class="text-4xl font-serif text-primary-container/30">03</div>
-<div>
-<h4 class="text-xl font-serif font-bold text-on-surface">Capítulo 3: El apego explicado fácil</h4>
-<p class="text-on-surface-variant">Descubre por qué te enganchas emocionalmente y cómo se forma ese vínculo que cuesta romper.</p>
-</div>
-</div>
-<!-- Step 4 -->
-<div class="flex items-center gap-6 p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors">
-<div class="text-4xl font-serif text-primary-container/30">04</div>
-<div>
-<h4 class="text-xl font-serif font-bold text-on-surface">Capítulo 4: Por qué sigues buscándolo </h4>
-<p class="text-on-surface-variant">Identifica la dependencia emocional, el autoengaño y la falsa esperanza que te hacen volver.</p>
-</div>
-</div>
-<!-- Step 5 -->
-<div class="flex items-center gap-6 p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors">
-<div class="text-4xl font-serif text-primary-container/30">05</div>
-<div>
-<h4 class="text-xl font-serif font-bold text-on-surface">Capítulo 5: Volver a ti </h4>
-<p class="text-on-surface-variant">Reconecta contigo, recupera tu autoestima y empieza a priorizarte de nuevo.</p>
-</div>
-</div>
-<!-- Step 6 -->
-<div class="flex items-center gap-6 p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors">
-<div class="text-4xl font-serif text-primary-container/30">06</div>
-<div>
-<h4 class="text-xl font-serif font-bold text-on-surface">Capítulo 6: Soltar sin romperte </h4>
-<p class="text-on-surface-variant">Aprende a dejar de escribirle, controlar impulsos y cortar el contacto sin recaer.</p>
-</div>
-</div>
-<!-- Step 7 -->
-<div class="flex items-center gap-6 p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors">
-<div class="text-4xl font-serif text-primary-container/30">07</div>
-<div>
-<h4 class="text-xl font-serif font-bold text-on-surface">Capítulo 7: Reconstruirte </h4>
-<p class="text-on-surface-variant">Crea nuevos hábitos, una rutina emocional y empieza a sanar desde adentro.</p>
-</div>
-</div>
-<!-- Step 8 -->
-<div class="flex items-center gap-6 p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors">
-<div class="text-4xl font-serif text-primary-container/30">08</div>
-<div>
-<h4 class="text-xl font-serif font-bold text-on-surface">Capítulo 8: Amar diferente </h4>
-<p class="text-on-surface-variant">Aprende a amar sin apego, poner límites y no repetir los mismos patrones.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- CIERRE Y OFERTA FINAL -->
-<section class="py-24 bg-surface-container-lowest" id="buy">
-<div class="max-w-4xl mx-auto px-8">
-<!-- Purchase Box -->
-<div class="border border-outline-variant/30 rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 bg-surface shadow-sm">
-<div class="w-full md:w-1/3">
-<img src="logo.png" alt="Ya no te espero, me elijo eBook Logo">
-</div>
-<div class="flex-1 text-center md:text-left">
-<h3 class="text-3xl font-serif mb-4">Ya no te espero, me elijo</h3>
-<p class="text-on-surface-variant mb-6 italic">La guía que necesitas para soltar, sanar y volver a ti.</p>
-<div class="flex items-baseline justify-center md:justify-start gap-4 mb-8">
-<span class="text-on-surface-variant/50 line-through text-xl">$9.99</span>
-<span class="text-4xl font-bold text-primary-container">$5.99</span>
-<span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold tracking-tighter uppercase">PRECIO DE LANZAMIENTO</span>
-</div>
-<a href="https://pay.hotmart.com/K105395278U" 
-<button class="w-full bg-primary-container text-on-primary py-5 rounded-xl font-bold text-lg hover:brightness-95 transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3">
-<span class="material-symbols-outlined">shopping_bag</span>
-                        QUIERO EMPEZAR A SOLTAR
-                    </button>
-                </a>
-<p class="mt-4 text-xs text-on-surface-variant/60 flex items-center justify-center md:justify-start gap-2">
+<div class="flex items-center gap-2 text-on-surface-variant opacity-70">
 <span class="material-symbols-outlined text-sm">lock</span>
-                        Pago 100% seguro • Acceso inmediato • Léelo hoy mismo
-                    </p>
+<span class="text-xs font-label-caps">DESCARGA INMEDIATA • PAGO SEGURO • ACCESO PARA SIEMPRE </span>
 </div>
 </div>
+<div class="order-1 md:order-2 flex justify-center relative">
+<div class="absolute -z-10 w-full h-full bg-secondary-container/30 blur-3xl rounded-full scale-110 top-0 left-0"></div>
+<img alt="Mockup cover" class="w-full max-w-md drop-shadow-2xl hover:scale-105 transition-transform duration-700" src="portada.jpeg"/>
+</div>
+</div>
+</section>
 
-<!-- FAQ Section -->
-<div class="mt-24 max-w-2xl mx-auto">
-<h4 class="text-2xl font-serif text-center mb-10">Preguntas frecuentes</h4>
+<!-- Section 2: Identification -->
+<section class="bg-surface-container-low py-section-padding-lg">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="max-w-2xl mx-auto text-center mb-16">
+<h2 class="font-headline-md text-headline-md mb-6">Tal vez te has sentido así...</h2>
+<div class="w-12 h-1 bg-primary/20 mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-surface p-10 rounded-2xl soft-shadow border border-outline-variant/30 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">psychology</span>
+<p class="font-quote text-quote italic text-on-surface-variant">"Analizo cada conversación mil veces buscando errores que probablemente solo yo noto."</p>
+</div>
+<div class="bg-surface p-10 rounded-2xl soft-shadow border border-outline-variant/30 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">bedtime</span>
+<p class="font-quote text-quote italic text-on-surface-variant">"Mi mente se enciende justo cuando apago la luz, repasando pendientes y miedos del futuro."</p>
+</div>
+<div class="bg-surface p-10 rounded-2xl soft-shadow border border-outline-variant/30 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">warning</span>
+<p class="font-quote text-quote italic text-on-surface-variant">"Paso horas imaginando problemas futuros y buscando soluciones para situaciones que ni siquiera han ocurrido."</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Section 3: Chapters -->
+<section class="py-section-padding-lg px-margin-mobile md:px-gutter max-w-container-max mx-auto" id="chapters">
+<h2 class="font-headline-md text-headline-md text-center mb-16">Lo que encontrarás dentro</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Chapter cards -->
+<div class="reflection-card p-8 rounded-xl border border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-primary/60 block mb-2">Capítulo 01</span>
+<h3 class="font-headline-sm text-headline-sm mb-3">Las 2:47 de la madrugada</h3>
+<p class="text-on-surface-variant opacity-80">Por qué el silencio exterior suele activar nuestro ruido interior más profundo.</p>
+</div>
+<div class="reflection-card p-8 rounded-xl border border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-primary/60 block mb-2">Capítulo 02</span>
+<h3 class="font-headline-sm text-headline-sm mb-3">La necesidad de tener todo bajo control</h3>
+<p class="text-on-surface-variant opacity-80">Cómo el intento constante de controlar todo termina alimentando la ansiedad.</p>
+</div>
+<div class="reflection-card p-8 rounded-xl border border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-primary/60 block mb-2">Capítulo 03</span>
+<h3 class="font-headline-sm text-headline-sm mb-3">Problemas que aún no existen</h3>
+<p class="text-on-surface-variant opacity-80">Por qué tu mente crea escenarios futuros y cómo dejar de vivir en ellos.</p>
+</div>
+<div class="reflection-card p-8 rounded-xl border border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-primary/60 block mb-2">Capítulo 04</span>
+<h3 class="font-headline-sm text-headline-sm mb-3">Cuando descansar ya no es suficiente</h3>
+<p class="text-on-surface-variant opacity-80">El agotamiento mental que aparece incluso cuando tu cuerpo intenta descansar.</p>
+</div>
+<div class="reflection-card p-8 rounded-xl border border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-primary/60 block mb-2">Capítulo 05</span>
+<h3 class="font-headline-sm text-headline-sm mb-3">Cuando el miedo vive en el futuro</h3>
+<p class="text-on-surface-variant opacity-80">Aprender a volver al presente cuando tu mente viaja constantemente hacia lo peor.</p>
+</div>
+<div class="reflection-card p-8 rounded-xl border border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-primary/60 block mb-2">Capítulo 06</span>
+<h3 class="font-headline-sm text-headline-sm mb-3">Sonreír mientras te derrumbas por dentro</h3>
+<p class="text-on-surface-variant opacity-80">La carga emocional de aparentar que todo está bien cuando no lo está.</p>
+</div>
+</div>
+<div class="mt-8 text-center">
+<span class="text-on-surface-variant italic">+ 4 capítulos adicionales y ejercicios prácticos para acompañarte paso a paso.</span>
+</div>
+</section>
+
+<!-- Section 4: Benefits -->
+<section class="bg-primary text-on-primary py-section-padding-lg overflow-hidden relative">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/20 blur-full rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
+<h2 class="font-headline-md text-headline-md text-center mb-16">Este ebook te ayudará a...</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-on-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">visibility</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm">Identificar patrones</h4>
+<p class="opacity-80">Reconoce los disparadores que inician tu ciclo de sobrepensamiento.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-on-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">low_priority</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm">Entender tu ansiedad</h4>
+<p class="opacity-80">Comprende por qué tu mente actúa así y deja de sentir que estás luchando contra ti.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-on-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm">Autocompasión</h4>
+<p class="opacity-80">Deja de castigarte por sentirte cansado, ansioso o emocionalmente agotado.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-on-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">self_care</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm">Volver al presente</h4>
+<p class="opacity-80">Aprende herramientas sencillas para salir del futuro y regresar al momento actual.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Section 5: Bonus -->
+<section class="py-section-padding-lg px-margin-mobile md:px-gutter max-w-container-max mx-auto" id="bonus">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative group">
+<div class="absolute -top-4 -left-4 bg-tertiary text-on-tertiary px-4 py-2 rounded-lg font-label-caps text-label-caps z-10 shadow-lg">BONUS INCLUIDO</div>
+<img alt="Kit de Emergencia" class="w-full rounded-2xl soft-shadow group-hover:rotate-1 transition-transform" src="bonus.jpeg"/>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-tertiary tracking-widest block mb-4">REGALO EXCLUSIVO</span>
+<h2 class="font-headline-md text-headline-md mb-6">Además recibirás GRATIS el "Kit de emergencia"</h2>
+<p class="text-on-surface-variant mb-8">Un complemento práctico del ebook principal con ejercicios y herramientas que podrás usar en momentos reales de ansiedad, sobrepensamiento o agotamiento emocional.</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-semibold block">5 Herramientas de emergencia emocional</span>
+<span class="text-sm text-on-surface-variant">Ejercicios sencillos para momentos de ansiedad, miedo o sobrepensamiento.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-semibold block">Ejercicios para volver al presente</span>
+<span class="text-sm text-on-surface-variant">Recursos prácticos para salir del bucle mental y recuperar claridad.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-semibold block">Plan de emergencia personal</span>
+<span class="text-sm text-on-surface-variant">Una plantilla guiada para crear tu propia estrategia para días difíciles.</span>
+</div>
+</li>
+</ul>
+<p class="mt-6 text-sm font-semibold text-primary">
+Valor estimado: 7.99 USD • Incluido gratis con tu compra
+</p>
+</div>
+</div>
+</section>
+
+<!-- Section 6 & 7: For whom -->
+<section class="py-section-padding-lg border-y border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid md:grid-cols-2 gap-16">
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-8 text-primary">Este ebook es para ti si...</h3>
 <div class="space-y-6">
-<details class="group border-b border-outline-variant/30 pb-4">
-<summary class="flex justify-between items-center cursor-pointer list-none font-bold text-on-surface">
-                            ¿Cómo recibiré el ebook?
-                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+<div class="p-6 bg-surface-container rounded-xl border-l-4 border-primary/40">
+<p class="text-on-surface-variant">Tiendes a sobrepensar cada pequeña decisión o interacción social.</p>
+</div>
+<div class="p-6 bg-surface-container rounded-xl border-l-4 border-primary/40">
+<p class="text-on-surface-variant">Sientes una ansiedad leve pero constante que te quita energía.</p>
+</div>
+<div class="p-6 bg-surface-container rounded-xl border-l-4 border-primary/40">
+<p class="text-on-surface-variant">Te sientes mentalmente agotado y no entiendes por qué tu mente no descansa.</p>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-8 text-tertiary">No es para ti si...</h3>
+<div class="space-y-6 opacity-80">
+<div class="p-6 bg-white rounded-xl border-l-4 border-outline-variant/40">
+<p class="text-on-surface-variant">Buscas una "solución mágica" que elimine la ansiedad sin reflexión.</p>
+</div>
+<div class="p-6 bg-white rounded-xl border-l-4 border-outline-variant/40">
+<p class="text-on-surface-variant">Esperas que un libro cambie tu vida sin poner nada de tu parte.</p>
+</div>
+<div class="p-6 bg-white rounded-xl border-l-4 border-outline-variant/40">
+<p class="text-on-surface-variant">No tienes interés en comprender tus emociones o trabajar en ellas.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<p class="text-on-surface-variant italic">
+No necesitas estar pasando por una crisis para beneficiarte de este libro. Muchas personas lo leen simplemente porque están cansadas de vivir con ruido mental constante.
+</p>
+</div>
+</div>
+</section>
+
+<!-- Section 8 & 9: Pricing -->
+<section class="py-section-padding-lg px-margin-mobile md:px-gutter bg-surface-container-low" id="pricing">
+<div class="max-w-3xl mx-auto">
+<div class="bg-white rounded-3xl soft-shadow p-12 md:p-16 relative overflow-hidden text-center">
+<div class="absolute top-0 left-0 w-full h-2 bg-primary"></div>
+<h2 class="font-headline-md text-headline-md mb-8">Comienza tu camino hacia la calma</h2>
+<div class="mb-10 inline-block text-left max-w-sm mx-auto">
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">done_all</span>
+<span class="font-body-md">Ebook completo + ejercicios prácticos</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">done_all</span>
+<span class="font-body-md">Kit de Emergencia Mental (Bonus Gratis)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">done_all</span>
+<span class="font-body-md">Descarga Inmediata (PDF &amp; ePub)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">done_all</span>
+<span class="font-body-md">Acceso Permanente y Actualizaciones</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-col items-center mb-10">
+<span class="text-on-surface-variant line-through opacity-50 text-xl">14.99 USD</span>
+<span class="text-6xl font-bold text-primary mt-2">9.99<span class="text-2xl ml-1">USD</span></span>
+<span class="font-label-caps text-label-caps text-tertiary mt-4">OFERTA DE LANZAMIENTO</span>
+</div>
+<a class="block w-full bg-primary text-on-primary py-6 rounded-full font-headline-sm hover:scale-[1.02] active:scale-95 transition-all shadow-xl" href="#">
+                    Quiero recuperar mi calma
+                </a>
+<p class="text-sm text-on-surface-variant mt-4">
+Acceso inmediato. Léelo a tu ritmo, desde cualquier dispositivo.
+</p>
+<p class="text-xs text-on-surface-variant mt-8 px-8">
+                    Recibirás un correo con el enlace de descarga inmediatamente después del pago. Compatible con Kindle, iPad y móviles.
+                </p>
+</div>
+</div>
+</section>
+
+<!-- Section 10: FAQ -->
+<section class="py-section-padding-lg px-margin-mobile md:px-gutter max-w-3xl mx-auto">
+<h2 class="font-headline-md text-headline-md text-center mb-16">Preguntas Frecuentes</h2>
+<div class="space-y-4">
+<details class="group border border-outline-variant/30 rounded-xl bg-white overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-semibold">¿En qué formato recibiré el libro?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
 </summary>
-<p class="mt-4 text-on-surface-variant text-sm">Tras realizar el pago, recibirás un correo electrónico automático con el enlace de descarga directa en formato PDF, compatible con cualquier dispositivo (móvil, tablet o PC).</p>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/10">
+                    Lo recibirás en formatos PDF y ePub de alta calidad, optimizados para cualquier dispositivo electrónico.
+                </div>
 </details>
-<details class="group border-b border-outline-variant/30 pb-4">
-<summary class="flex justify-between items-center cursor-pointer list-none font-bold text-on-surface">
-                            ¿Qué métodos de pago aceptan?
-                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group border border-outline-variant/30 rounded-xl bg-white overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-semibold">¿Es un pago único?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
 </summary>
-<p class="mt-4 text-on-surface-variant text-sm">Aceptamos todas las tarjetas de crédito, débito y PayPal. El procesamiento es seguro y está encriptado.</p>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/10">
+                    Sí, es un pago único de 9.99 USD. No hay suscripciones ni cargos ocultos.
+                </div>
 </details>
-<details class="group border-b border-outline-variant/30 pb-4">
-<summary class="flex justify-between items-center cursor-pointer list-none font-bold text-on-surface">
-                            ¿Es un libro físico?
-                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group border border-outline-variant/30 rounded-xl bg-white overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-semibold">¿Puedo leerlo en mi Kindle?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
 </summary>
-<p class="mt-4 text-on-surface-variant text-sm">Es un producto 100% digital. Esto permite que el precio sea más accesible y que puedas comenzar tu lectura y ejercicios de sanación en los próximos 5 minutos.</p>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/10">
+                    ¡Por supuesto! El formato ePub es compatible con Kindle (usando Send to Kindle) y cualquier otra aplicación de lectura.
+                </div>
+</details>
+<details class="group border border-outline-variant/30 rounded-xl bg-white overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-semibold">¿El bonus está incluido?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/10">
+                    Sí. Recibirás el ebook principal y el bonus "Kit de Emergencia Mental" sin costo adicional.
+                </div>
+</details>
+<details class="group border border-outline-variant/30 rounded-xl bg-white overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-semibold">¿Necesito conocimientos previos sobre ansiedad o salud mental?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/10">
+Este ebook está escrito con un lenguaje sencillo y cercano. No necesitas conocimientos previos para entenderlo y aplicarlo.
+</div>
+</details>
+<details class="group border border-outline-variant/30 rounded-xl bg-white overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-semibold">¿Este libro sustituye la ayuda profesional?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/10">
+No. Este ebook es una herramienta de apoyo y reflexión personal. Si estás pasando por una situación que afecta seriamente tu bienestar, buscar ayuda profesional sigue siendo una excelente opción.
+</div>
 </details>
 </div>
+</section>
+
+<!-- Section 11: Author -->
+<section class="bg-surface-container-highest py-section-padding-lg" id="author">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="relative">
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-primary mb-4 block">SOBRE LA AUTORA</span>
+<h2 class="font-headline-md text-headline-md mb-6">Sara Montiel</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 italic">"Escribí este libro para la persona que necesitaba escuchar que no tenía que resolverlo todo hoy."</p>
+<p class="text-on-surface-variant mb-8">Autora de "Cuando mi mente no se calla". A través de una escritura cercana, humana y reflexiva, comparte herramientas, ideas y experiencias destinadas a ayudar a quienes viven atrapados en el sobrepensamiento, la ansiedad cotidiana y el agotamiento mental. Su objetivo es recordar que la calma no siempre llega cuando intentamos controlar todo, sino cuando aprendemos a comprendernos mejor.</p>
+<div class="flex flex-col gap-2" id="contact">
+<span class="font-label-caps text-label-caps text-tertiary">CONTACTO</span>
+<a class="text-primary hover:underline underline-offset-4" href="mailto:sara@eleganceinmind.com">saramontiel.oficial@gmail.com</a>
+<p class="text-sm text-on-surface-variant mt-4">Si tienes preguntas sobre el ebook, puedes escribirme directamente.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Section 13: Closing -->
+<section class="py-section-padding-lg px-margin-mobile md:px-gutter max-w-4xl mx-auto text-center">
+<h2 class="font-headline-md text-headline-md mb-6">Hoy puede ser el primer paso hacia una mente más tranquila.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Si llevas demasiado tiempo viviendo con pensamientos que no se detienen, este ebook puede ayudarte a comprenderlos, enfrentarlos con más calma y recuperar poco a poco tu bienestar emocional.</p>
+<div class="flex flex-col items-center">
+<a class="bg-primary text-on-primary px-12 py-6 rounded-full font-headline-sm hover:scale-105 active:scale-95 transition-all shadow-xl mb-6" href="#pricing">
+                Quiero recuperar mi tranquilidad
+            </a>
+<div class="mt-6">
+<p class="text-sm text-on-surface-variant">
+Pago seguro • Acceso inmediato • Formato PDF
+</p>
 </div>
 </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-[#f8f3ed] dark:bg-stone-950 full-width py-16 px-8 border-t border-[#1d1b18]/5">
-<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-7xl mx-auto">
-<div class="text-lg font-serif text-[#1d1b18] dark:text-[#fef9f2]">Sara Montiel</div>
-<div class="flex flex-wrap justify-center gap-6 text-sm text-[#1d1b18]/60 dark:text-[#fef9f2]/60 font-body tracking-wide">
-<a class="hover:text-[#8C6A5E] underline-offset-4 hover:underline transition-all" href="mailto:saramontiel.oficial@gmail.com">Contact Support</a>
-
-<p class="text-xs text-[#1d1b18]/40 dark:text-[#fef9f2]/40">© 2026 Sara Montiel. Todos los derechos reservados.</p>
+</footer>
+<footer class="w-full py-8 bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+<div>
+<h3 class="font-headline-sm text-headline-sm">Cuando mi mente no se calla</h3>
+</div>
+<a class="flex items-center gap-2 text-primary hover:underline" href="mailto:saramontiel.oficial@gmail.com">
+<span class="material-symbols-outlined text-base">mail</span>saramontiel.oficial@gmail.com</a>
+<p class="text-sm text-on-surface-variant">© 2026 Sara Montiel</p>
 </div>
 </footer>
+<footer class="w-full py-8 bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+
+
+
+<script>
+        // Smooth reveal of navbar on scroll
+        let lastScroll = 0;
+        const nav = document.querySelector('nav');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll <= 0) {
+                nav.classList.remove('translate-y-[-100%]');
+                return;
+            }
+            
+            if (currentScroll > lastScroll && currentScroll > 80) {
+                nav.classList.add('translate-y-[-100%]');
+            } else {
+                nav.classList.remove('translate-y-[-100%]');
+            }
+            lastScroll = currentScroll;
+        });
+
+        // Simple accordion logic for FAQ is handled by <details> natively
+        // but we could add more animation here if needed.
+    </script>
 </body>
 </html>
